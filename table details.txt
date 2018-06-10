@@ -1,0 +1,23 @@
+														My Library Documentation
+														
+1.Publishers detailes
+2.Managing count of books
+3.Management of all roles in institution
+4.Issuing books
+
+Tables =>
+tbl_lib_enrol(lib_id,username)
+tbl_user()
+
+
+1.tbl_books(id,title,edition,author,publisher,published year,department id(fk),price,no_of_days)
+2.tbl_department(id,title)
+
+3.tbl_student(id,lib_id(fk),clg id,firstname,lastname,emailid,contact no,address,department(fk),roleId(fk))
+4.tbl_admin(id,lib_id(fk),faculty id,firstname,lastname,emailid,contact no,address)
+5.tbl_faculty(id,lib_id(fk),faculty id,firstname,lastname,emailid,contact no,address,department(fk),roleId(fk))
+6.tbl_librarian(id,lib_id(fk),faculty id,firstname,lastname,emailid,contact no,address,roleId(fk))
+7.tbl_fine(id,amount,role_id)
+9.tbl_issued_books(issued_id,lib_id(fk),book_id(fk),issued_date,returned_date)
+10.tbl_roles(role_id,role_name)
+11. tbl_bookstatus(seq_no,book_id,isAvailable(Y,N),issued_id(fk))
